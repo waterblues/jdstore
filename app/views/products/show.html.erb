@@ -3,9 +3,9 @@
     <div class="gallery">
       <div class="thumb">
         <% if @product.image.present? %>
-          <%= image_tag(@product.image.medium.url, class: "thumbnail") %>
+          <%= image_tag(@product.image.medium.url) %>
         <% else %>
-          <%= image_tag("http://placehold.it/400x400&text=No Pic", class: "thumbnail") %>
+          <%= image_tag("http://placehold.it/400x400&text=No Pic") %>
         <% end %>
       </div>
 
