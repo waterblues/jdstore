@@ -89,7 +89,7 @@ gem "intercom-rails"
 
 gem 'social-share-button'
 
-
+gem 'bullet', group: 'development'
 
 
 
