@@ -1,5 +1,5 @@
 class ProductsController < ApplicationController
-
+  before_action :find_product, only: [:show, :add_to_cart, :upvote]
 
   def index
     @q = Product.ransack(params[:q])
@@ -8,13 +8,10 @@ class ProductsController < ApplicationController
 
 
   def show
-    @product = Product.find(params[:id])
-
   end
 
 
   def add_to_cart
-    @product = Product.find(params[:id])
 
     if !current_cart.products.include?(@product)
       current_cart.add_product_to_cart(@product)
@@ -27,7 +24,6 @@ class ProductsController < ApplicationController
 
 
   def upvote
-    @product = Product.find(params[:id])
     @product.upvote_by current_user
     redirect_to :back
   end
