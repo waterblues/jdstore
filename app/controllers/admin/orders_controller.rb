@@ -1,8 +1,5 @@
-class Admin::OrdersController < ApplicationController
-  layout "admin"
+class Admin::OrdersController < AdminController
 
-  before_action :authenticate_user!
-  before_action :admin_required
 
   def admin_required
     if !current_user.admin?
