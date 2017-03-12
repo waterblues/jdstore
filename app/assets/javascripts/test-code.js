@@ -61,7 +61,7 @@ $(document).on('ready', function(){
 });
 
 function isEmpty(t){
-  return "" == $.trim(t)
+  return "" === $.trim(t)
 }
 
 function isFloat(t){

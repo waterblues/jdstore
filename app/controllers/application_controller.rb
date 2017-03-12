@@ -16,5 +16,12 @@ class ApplicationController < ActionController::Base
     end
     session[:cart_id] = cart.id
     return cart
+  end
+
+  def pay_with
+    @order = Order.find_by_token(params[:id])
+    @order.set_payment_with!("wechat")
+    @order.make_payment!
   end 
+
 end
