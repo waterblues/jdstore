@@ -9,6 +9,9 @@ class ProductsController < ApplicationController
 
   def show
     @product = Product.find(params[:id])
+
+    set_page_title @product.title
+    set_page_description "#{@product.description}"
   end
 
 
@@ -21,7 +24,7 @@ class ProductsController < ApplicationController
     else
       flash[:warning] = "你的购物车内已有此物品"
     end
-    
+
   end
 
 
