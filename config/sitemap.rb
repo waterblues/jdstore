@@ -1,15 +1,7 @@
-# -*- encoding : utf-8 -*-
-
-# Set the host name for URL creation
-
 SitemapGenerator::Sitemap.default_host = "https://desolate-caverns-98949.herokuapp.com/"
 SitemapGenerator::Sitemap.create_index = true
 
 # Generate Sitemaps on read only filesystems like Heroku
-
-# Reference:
-
-# https://github.com/kjvarga/sitemap_generator/wiki/Generate-Sitemaps-on-read-only-filesystems-like-Heroku#using-carrierwave
 
 # pick a place safe to write the files
 
@@ -27,6 +19,12 @@ SitemapGenerator::Sitemap.sitemaps_path = 'sitemap/'
 SitemapGenerator::Sitemap.create do
 
   add "/products"
+
+  Product.find_each do |product|
+    add product_path(product), :lastmod => product.updated_at
+  end
+
+end
 
 
   # Put links creation logic here.
@@ -66,12 +64,3 @@ SitemapGenerator::Sitemap.create do
   # Add all articles:
 
   #
-
-  #   Article.find_each do |article|
-
-  #     add article_path(article), :lastmod => article.updated_at
-
-  #   end
-
-
-end
