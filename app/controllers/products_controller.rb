@@ -8,7 +8,7 @@ class ProductsController < ApplicationController
 
 
   def show
-    @product = Product.find(params[:id])
+    @product = Product.find_by_friendly_id!(params[:id])
 
     set_page_title @product.title
     set_page_description "#{@product.description}"

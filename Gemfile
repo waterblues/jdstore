@@ -20,7 +20,9 @@ gem 'seo_helper'
 
 gem 'sitemap_generator'
 
+gem 'rails-i18n'
 
+gem 'devise-i18n'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

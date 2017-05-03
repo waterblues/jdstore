@@ -1,0 +1,8 @@
+"zh-CN":
+  hello: "亲~ %{name} 你好："
+  product_reserve: 库存
+  activerecord:
+    attributes:
+      product:
+        title: "产品名称"
+        description: "描述"

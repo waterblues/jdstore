@@ -53,5 +53,7 @@ Rails.application.routes.draw do
  end
 
 
+resource :user 
+
 
 end
