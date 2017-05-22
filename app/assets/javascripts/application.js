@@ -16,8 +16,9 @@
 //= require bootstrap
 //= require test-code.js
 //= require social-share-button
+//= require select2
 //= require_tree .
-//= require social-share-button/wechat 
+//= require social-share-button/wechat
 //轮播大图
 $(document).ready(function () {
   $('#myCarousel').carousel({

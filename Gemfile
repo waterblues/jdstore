@@ -93,7 +93,7 @@ gem 'social-share-button'
 
 gem 'bullet', group: 'development'
 
-
+gem 'select2-rails'
 
 
 
