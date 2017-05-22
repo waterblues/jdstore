@@ -1,4 +1,7 @@
 class Order < ApplicationRecord
+    STATUS = ["order_placed", "paid", "shipping", "shipped", "order_cancelled", "good_returned"]
+    scope :by_aasm_state, ->(s){ where( :aasm_state => s )}
+
   before_create :generate_token
 
   def generate_token
