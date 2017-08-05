@@ -1,7 +1,7 @@
 CarrierWave.configure do |config|
   config.storage             = :qiniu
-  config.qiniu_access_key    = ENV["m5iNkMrm5_-_TEp-sovA30NbNVaKegnGTmtmp9OW"]
-  config.qiniu_secret_key    = ENV["Dh05NH1YKwtqVoi9g6m7L8KQrWb0skpBB7zLSUSo"]
+  config.qiniu_access_key    = ENV["qBfiuOpWDXZPOVHREe7PKQGK8fop9bXsqxc0jVIm"]
+  config.qiniu_secret_key    = ENV["mARxfcLQTtGFWFOa-WWb_NluhO7C4mxCXiZKwS8f"]
   config.qiniu_bucket        = ENV["jdstore-demo"]
   config.qiniu_bucket_domain = ENV["ou7grz7ha.bkt.clouddn.com"]
   config.qiniu_block_size    = 4*1024*1024
