@@ -10,3 +10,5 @@
 
 u = User.create([ email: 'admin@test.com' ,  password: '123456' ,password_confirmation:'123456',is_admin:true])
 puts "create a adminer"
+
+create_categories = 10.times{ |i| Category.create!( :name => "No.1 #{i} Category") }
