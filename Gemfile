@@ -83,8 +83,6 @@ gem 'fog-aws'
 
 gem 'ransack'
 
-gem 'airbrake', '~> 5.4'
-
 gem 'acts_as_votable', '~> 0.10.0'
 
 gem "intercom-rails"
@@ -101,7 +99,8 @@ gem 'mysql2'
 
 gem 'rack-mini-profiler', require: false
 
-
+gem 'carrierwave-qiniu'
+gem 'qiniu-rs'
 
 
 # For memory profiling (requires Ruby MRI 2.1+)
