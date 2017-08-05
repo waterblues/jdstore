@@ -95,7 +95,7 @@ gem 'bullet', group: 'development'
 
 gem 'select2-rails'
 
-
+gem 'premailer-rails'
 
 gem 'mysql2'
 
