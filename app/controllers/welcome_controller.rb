@@ -10,7 +10,4 @@ class WelcomeController < ApplicationController
     @product.upvote_by current_user
     redirect_to :back
   end
-
-
-
 end

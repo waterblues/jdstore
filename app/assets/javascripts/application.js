@@ -26,10 +26,6 @@ $(document).ready(function () {
   })
 })
 
-
-
-
-
 $(document).on('click', '#gotop', function () {
   $('body').animate({'scrollTop': 0}, 500) //在500ms的时间内，慢慢地回到顶部
 })
@@ -41,7 +37,6 @@ $(window).scroll(function () {
     $('#gotop').fadeOut() // 否则慢慢地隐藏「回到顶部按钮」
   }
 })
-
 
 // products index页的hover出现查看详情、加入购物车
 $(document).ready(function() {

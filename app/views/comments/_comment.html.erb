@@ -1,21 +1,18 @@
 <div class="comments_wrapper clearfix">
-
   <div class="pull-left">
     <p class="lead">
       <%= comment.body %>
     </p>
     <p>
       <small>Submitted
-      <%= comment.created_at.to_s(:ymd) %> 
+      <%= comment.created_at.to_s(:ymd) %>
       by
       <%= comment.user.email %></small>
     </p>
   </div>
-
   <div>
     <% if comment.user == current_user %>
       <%= link_to("Delete", product_comment_path(@product, comment), method: :delete, data: {confirm: "Are you sure?"}, class: "btn btn-sm pull-right") %>
     <% end %>
   </div>
-
 </div>

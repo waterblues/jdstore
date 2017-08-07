@@ -8,20 +8,13 @@
      <li><button class="btn btn-default btn-link filter-button" data-filter="meat">各种肉</button></li>
      <li><button class="btn btn-default btn-link filter-button" data-filter="someregion">地方特色</button></li>
    </ul>
-
-
-
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
-
       <ul class="nav navbar-nav navbar-right">
         <li>
           <%= link_to carts_path do %>
             购物车 <i class="fa fa-shopping-cart"></i> (<span id="shopcar"><%= current_cart.products.count %> </span> )
           <% end %>
         </li>
-
-
         <% if !current_user %>
           <li>
             <%= link_to("注册", new_user_registration_path) %>

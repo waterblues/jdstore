@@ -1,5 +1,4 @@
 class UsersController < ApplicationController
-
   before_action :authenticate_user!
 
   def edit
@@ -18,13 +17,7 @@ class UsersController < ApplicationController
   end
 
   protected
-
-
   def user_params
     params.require(:user).permit(:time_zone)
-  end 
-
-
-
-
+  end
 end

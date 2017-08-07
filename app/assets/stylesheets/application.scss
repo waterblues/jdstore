@@ -18,10 +18,8 @@
 
  @import "bootstrap-sprockets";
  @import "bootstrap";
-
  @import "font-awesome";
  @import "social-share-button";
-
  @import "select2";
  @import "select2-bootstrap";
 
@@ -42,15 +40,11 @@
   padding-top: 14px;
 }
 
-
 body {
-
   position: relative;    //相对于正常位置
   min-height: 100%;
   background: rgb(237,237,237);
 }
-
-
 
 .footer {
   background: #fafafa;
@@ -87,9 +81,6 @@ body {
   cursor: pointer;
   display: none; /*默认先隐藏掉*/
 }
-
-
-
 
 .social-share-button {
   .ssb-icon {

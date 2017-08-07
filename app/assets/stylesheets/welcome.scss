@@ -1,9 +1,6 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
-
-
 .page-home .hot-panel {
   width: 100%;
   overflow: hidden;
@@ -18,7 +15,6 @@
   width: 100%;
   overflow: hidden;
 }
-
 
 .page-home .box {
   background: #fff;
@@ -75,7 +71,6 @@
   border-right: 1px solid rgba(0,0,0, 0.0980392);
 }
 
-
 .page-home .hot-panel .cell-list>li::before {
   content: '';
   width: 100%;
@@ -87,7 +82,6 @@
   z-index: 1;
   pointer-events: none;
 }
-
 
 .page-home .hot-panel .box .hot-cell-list.active {
   visibility: visible;
@@ -168,9 +162,6 @@
   position: relative;
 }
 
-
-
-
 .page-home .cover-link {
   display: block;
   position: absolute;
@@ -193,14 +184,6 @@
   border-top: 1px solid rgba(0,0,0,.1);
 }
 
-
-
-
-
-
-
-
-
 section {
   display: block;
 }
@@ -212,7 +195,6 @@ div {
 header {
   display: block;
 }
-
 
 h5 {
   display: block;
@@ -238,7 +220,6 @@ p {
   -webkit-margin-start: 0px;
   -webkit-margin-end: 0px;
 }
-
 
 ul {
   display: block;

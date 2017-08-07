@@ -5,14 +5,12 @@ class CommentsController < ApplicationController
     @product = Product.find(params[:product_id])
     @comment = @product.comments.new(comment_params)
     @comment.user = current_user
-
     if @comment.save
       redirect_to product_path(@product), notice: 'Review was successfully created.'
     else
       redirect_to product_path(@product), notice: 'You have to write some words.'
     end
   end
-
 
   def destroy
     @product = Product.find(params[:product_id])
@@ -22,11 +20,7 @@ class CommentsController < ApplicationController
   end
 
   private
-
   def comment_params
     params.require(:comment).permit(:body)
   end
-
-
-
 end

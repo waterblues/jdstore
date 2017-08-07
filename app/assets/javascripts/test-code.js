@@ -1,18 +1,14 @@
 $(document).on('ready', function(){
-
   var $add = $("#btn-add");
   var $reduce = $("#btn-reduce");
   var $buynum = $("#buy-num");
   var $max = 99
   var $min = 1
 
-
   $(document).on("click", "#btn-add", function(event){
     event.preventDefault();
-
     var count = Number($buynum.val());
     var number = count + 1;
-
     if (number >= $max){
       $add.addClass("disabled");
       $reduce.removeClass("disabled");
@@ -26,10 +22,8 @@ $(document).on('ready', function(){
   // reduce
   $(document).on("click", "#btn-reduce", function(event){
     event.preventDefault();
-
     var count = Number($buynum.val());
     var number = count - 1;
-
     if (number <= $min){
       $buynum.val($min);
       $reduce.addClass("disabled");
@@ -44,7 +38,6 @@ $(document).on('ready', function(){
 
   $(document).on("keyup", "#buy-num", function(event){
     event.preventDefault();
-
     var t = $.trim( $buynum.val() );
     if ( isNaN(Number(t)) || isEmpty(Number(t)) || isFloat(Number(t)) || Number(t) > $max || Number(t) < $min ) {
       alert("请输入 1～{0} 之间的整数".format($max));
@@ -53,7 +46,6 @@ $(document).on('ready', function(){
       } else {
         $buynum.val($min);
       }
-
     } else {
       $buynum.val(Number(t));
     }
@@ -67,7 +59,6 @@ function isEmpty(t){
 function isFloat(t){
   return Number(t) === t && t % 1 !== 0
 }
-
 
 String.prototype.format = function()
 {

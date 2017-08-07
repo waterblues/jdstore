@@ -3,34 +3,22 @@
   <head>
     <meta name="google-site-verification" content="cV7bDctibQBgGrx7MmUWopB5UYvM2LM_4nKqEujWPlc" />
     <title>Jdstore</title>
-
     <%= render_page_title_tag %>
     <%= render_page_description_meta_tag %>
-
     <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-
-
-
   </head>
-
   <body>
-
     <div class="container-fluid">
       <%= render "common/navbar" %>
       <%= render "common/flashes" %>
       <%= link_to "中文版", :controller => controller_name, :action => action_name, :locale => "zh-CN" %>
       <%= link_to "English", :controller => controller_name, :action => action_name, :locale => "en" %>
       <%= yield %>
-
     </div>
-
     <div class="page-footer">
       <%= render "common/footer" %>
     </div>
-
-
   </body>
 </html>

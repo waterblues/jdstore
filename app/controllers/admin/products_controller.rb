@@ -1,19 +1,14 @@
 class Admin::ProductsController < AdminController
 
-
   def admin_required
     if !current_user.admin?
       redirect_to "/", alert: "You are not admin."
     end
   end
 
-
-
   def index
     @products = Product.all
   end
-
-
 
   def new
     @product = Product.new
@@ -42,16 +37,8 @@ class Admin::ProductsController < AdminController
     end
   end
 
-
-
   private
-
   def product_params
     params.require(:product).permit(:title, :description, :quantity, :price, :image, :category_id)
   end
-
-
-
-
-
 end

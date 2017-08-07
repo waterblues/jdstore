@@ -1,8 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-
-
   root 'products#index'
 
   namespace :admin do
@@ -18,16 +16,12 @@ Rails.application.routes.draw do
   end
 
  resources :products do
-
-
    member do
      post :add_to_cart
      put "like", to:"products#upvote"
    end
    resources :comments
  end
-
-
 
  resources :carts do
    collection do
@@ -46,14 +40,8 @@ Rails.application.routes.draw do
    end
  end
 
-
-
  namespace :account do
    resources :orders
  end
-
-
-resource :user 
-
-
+ resource :user
 end

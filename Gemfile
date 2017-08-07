@@ -1,10 +1,7 @@
 source 'https://rubygems.org'
-
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0'
 # Use sqlite3 as the database for Active Record
-
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
@@ -15,15 +12,10 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
-
 gem 'seo_helper'
-
 gem 'sitemap_generator'
-
 gem 'rails-i18n'
-
 gem 'devise-i18n'
-
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
@@ -34,13 +26,10 @@ gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-
   gem 'byebug', platform: :mri
   gem 'sqlite3'
 end
@@ -53,7 +42,6 @@ group :development do
   #gem 'spring'
   #gem 'spring-watcher-listen', '~> 2.0.0'
 end
-
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
@@ -62,50 +50,28 @@ group :production do
 end
 
 gem 'bootstrap-sass'
-
 gem 'devise'
-
 gem 'simple_form'
-
 gem 'font-awesome-rails'
-
 gem 'carrierwave'
-
 gem 'mini_magick'
-
 gem 'letter_opener', group: :development
-
 gem 'aasm'
-
 gem 'figaro'
-
 gem 'fog-aws'
-
 gem 'ransack'
-
 gem 'acts_as_votable', '~> 0.10.0'
-
 gem "intercom-rails"
-
 gem 'social-share-button'
-
 gem 'bullet', group: 'development'
-
 gem 'select2-rails'
-
 gem 'premailer-rails'
-
 gem 'mysql2'
-
 gem 'rack-mini-profiler', require: false
-
 gem 'carrierwave-qiniu'
 gem 'qiniu-rs'
-
-
 # For memory profiling (requires Ruby MRI 2.1+)
 gem 'memory_profiler'
-
 # For call-stack profiling flamegraphs (requires Ruby MRI 2.0.0+)
 gem 'flamegraph'
 gem 'stackprof'     # For Ruby MRI 2.1+

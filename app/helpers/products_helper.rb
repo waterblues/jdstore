@@ -1,5 +1,4 @@
-module ProductsHelper
-  
+module ProductsHelper  
   def render_special_filter_class(product)
     if product.category == '各种肉'
       'meat'
@@ -9,9 +8,4 @@ module ProductsHelper
       'someregion'
     end
   end
-
-
-
-
-
 end

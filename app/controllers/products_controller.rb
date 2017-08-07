@@ -1,11 +1,9 @@
 class ProductsController < ApplicationController
 
-
   def index
     @q = Product.ransack(params[:q])
     @products = @q.result(distinct: true)
   end
-
 
   def show
     @product = Product.find(params[:id])
@@ -14,9 +12,7 @@ class ProductsController < ApplicationController
     set_page_description "#{@product.description}"
   end
 
-
   def add_to_cart
-
     @product = Product.find(params[:id])
     if !current_cart.products.include?(@product)
       current_cart.add_product_to_cart(@product)
@@ -24,18 +20,11 @@ class ProductsController < ApplicationController
     else
       flash[:warning] = "你的购物车内已有此物品"
     end
-
   end
-
 
   def upvote
     @product = Product.find(params[:id])
     @product.upvote_by current_user
     redirect_to :back
   end
-
-
-
-
-
 end
