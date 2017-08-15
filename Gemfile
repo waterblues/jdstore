@@ -69,7 +69,7 @@ gem 'premailer-rails'
 gem 'mysql2'
 gem 'rack-mini-profiler', require: false
 gem 'carrierwave-qiniu'
-gem 'qiniu-rs'
+
 # For memory profiling (requires Ruby MRI 2.1+)
 gem 'memory_profiler'
 # For call-stack profiling flamegraphs (requires Ruby MRI 2.0.0+)
