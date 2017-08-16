@@ -1,5 +1,6 @@
 class ImageUploader < CarrierWave::Uploader::Base
 
+  attr_accessor :qiniu_persistent_pipeline, :qiniu_delete_after_days
   # Include RMagick or MiniMagick support:
   # include CarrierWave::RMagick
   include CarrierWave::MiniMagick

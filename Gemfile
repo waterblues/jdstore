@@ -58,7 +58,6 @@ gem 'mini_magick'
 gem 'letter_opener', group: :development
 gem 'aasm'
 gem 'figaro'
-gem 'fog-aws'
 gem 'ransack'
 gem 'acts_as_votable', '~> 0.10.0'
 gem "intercom-rails"
@@ -69,6 +68,8 @@ gem 'premailer-rails'
 gem 'mysql2'
 gem 'rack-mini-profiler', require: false
 gem 'carrierwave-qiniu'
+gem 'qiniu'
+
 
 # For memory profiling (requires Ruby MRI 2.1+)
 gem 'memory_profiler'
