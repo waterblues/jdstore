@@ -69,6 +69,7 @@ gem 'mysql2'
 gem 'rack-mini-profiler', require: false
 gem 'carrierwave-qiniu'
 gem 'qiniu'
+gem 'rollbar'
 
 
 # For memory profiling (requires Ruby MRI 2.1+)

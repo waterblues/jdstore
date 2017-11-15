@@ -196,6 +196,8 @@ GEM
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 4.0)
       netrc (~> 0.8)
+    rollbar (2.15.5)
+      multi_json
     ruby-hmac (0.4.0)
     sass (3.5.1)
       sass-listen (~> 4.0.0)
@@ -286,6 +288,7 @@ DEPENDENCIES
   rails (~> 5.0.0)
   rails-i18n
   ransack
+  rollbar
   sass-rails (~> 5.0)
   select2-rails
   seo_helper
